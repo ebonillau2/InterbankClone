@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F48D2152EBF2E6A00718D35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48D2112EBF2E6A00718D35 /* ContentView.swift */; };
+		7F48D2152EBF2E6A00718D35 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48D2112EBF2E6A00718D35 /* LoginScreen.swift */; };
 		7F48D2162EBF2E6A00718D35 /* InterbankCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48D2122EBF2E6A00718D35 /* InterbankCloneApp.swift */; };
-		7F48D2172EBF2E6A00718D35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48D2132EBF2E6A00718D35 /* Item.swift */; };
 		7F48D2182EBF2E6A00718D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F48D2102EBF2E6A00718D35 /* Assets.xcassets */; };
+		7F6778BF2EBF30BB00FF8228 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778BE2EBF30BB00FF8228 /* CoordinatorProtocol.swift */; };
+		7F6778C42EBF361800FF8228 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778C32EBF361800FF8228 /* Color.swift */; };
+		7F6778C62EBF39E800FF8228 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778C52EBF39E800FF8228 /* Header.swift */; };
+		7F6778C82EBF3D5A00FF8228 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778C72EBF3D5A00FF8228 /* ActionButton.swift */; };
+		7F6778CA2EBF40C900FF8228 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778C92EBF40C900FF8228 /* View.swift */; };
+		7F6778CD2EBF451800FF8228 /* LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6778CC2EBF451800FF8228 /* LoginScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +40,14 @@
 		7F48D1F32EBF2E5900718D35 /* InterbankCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterbankCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F48D1FD2EBF2E5900718D35 /* InterbankCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterbankCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F48D2102EBF2E6A00718D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7F48D2112EBF2E6A00718D35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F48D2112EBF2E6A00718D35 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		7F48D2122EBF2E6A00718D35 /* InterbankCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterbankCloneApp.swift; sourceTree = "<group>"; };
-		7F48D2132EBF2E6A00718D35 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7F6778BE2EBF30BB00FF8228 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		7F6778C32EBF361800FF8228 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7F6778C52EBF39E800FF8228 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		7F6778C72EBF3D5A00FF8228 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		7F6778C92EBF40C900FF8228 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		7F6778CC2EBF451800FF8228 /* LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -101,12 +111,57 @@
 		7F48D2142EBF2E6A00718D35 /* InterbankClone */ = {
 			isa = PBXGroup;
 			children = (
+				7F6778CB2EBF44CB00FF8228 /* Screenshots */,
+				7F6778C22EBF360700FF8228 /* Utils */,
+				7F6778C02EBF33F000FF8228 /* Screens */,
+				7F6778BD2EBF30AC00FF8228 /* Coordinator */,
 				7F48D2102EBF2E6A00718D35 /* Assets.xcassets */,
-				7F48D2112EBF2E6A00718D35 /* ContentView.swift */,
 				7F48D2122EBF2E6A00718D35 /* InterbankCloneApp.swift */,
-				7F48D2132EBF2E6A00718D35 /* Item.swift */,
 			);
 			path = InterbankClone;
+			sourceTree = "<group>";
+		};
+		7F6778BD2EBF30AC00FF8228 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7F6778BE2EBF30BB00FF8228 /* CoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7F6778C02EBF33F000FF8228 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7F6778C12EBF341800FF8228 /* Shared */,
+				7F48D2112EBF2E6A00718D35 /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7F6778C12EBF341800FF8228 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7F6778C52EBF39E800FF8228 /* Header.swift */,
+				7F6778C72EBF3D5A00FF8228 /* ActionButton.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7F6778C22EBF360700FF8228 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F6778C32EBF361800FF8228 /* Color.swift */,
+				7F6778C92EBF40C900FF8228 /* View.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F6778CB2EBF44CB00FF8228 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				7F6778CC2EBF451800FF8228 /* LoginScreen.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F48D2182EBF2E6A00718D35 /* Assets.xcassets in Resources */,
+				7F6778CD2EBF451800FF8228 /* LoginScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,9 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F48D2152EBF2E6A00718D35 /* ContentView.swift in Sources */,
+				7F48D2152EBF2E6A00718D35 /* LoginScreen.swift in Sources */,
+				7F6778C62EBF39E800FF8228 /* Header.swift in Sources */,
+				7F6778C42EBF361800FF8228 /* Color.swift in Sources */,
 				7F48D2162EBF2E6A00718D35 /* InterbankCloneApp.swift in Sources */,
-				7F48D2172EBF2E6A00718D35 /* Item.swift in Sources */,
+				7F6778BF2EBF30BB00FF8228 /* CoordinatorProtocol.swift in Sources */,
+				7F6778CA2EBF40C900FF8228 /* View.swift in Sources */,
+				7F6778C82EBF3D5A00FF8228 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
