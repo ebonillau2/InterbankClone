@@ -41,7 +41,10 @@ Creado por Enrique Bonilla
 
 ## 🧠 Screenshots
 
-<img src="InterbankClone/Screenshots/LoginScreen.png" width="300" alt="Login Screen">
+<div align="center">
+  <img src="InterbankClone/Screenshots/LoginScreen.png" width="250" alt="Login Screen">
+  <img src="InterbankClone/Screenshots/MoreOptionsScreen.png" width="250" alt="More Options Screen">
+</div>
 
 ---
 
