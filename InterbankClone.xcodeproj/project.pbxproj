@@ -16,6 +16,9 @@
 		7F6778C82EBF3D5A00FF8228 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778C72EBF3D5A00FF8228 /* ActionButton.swift */; };
 		7F6778CA2EBF40C900FF8228 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778C92EBF40C900FF8228 /* View.swift */; };
 		7F6778CD2EBF451800FF8228 /* LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6778CC2EBF451800FF8228 /* LoginScreen.png */; };
+		7F6778D52EBF467C00FF8228 /* MoreOptionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778D42EBF467C00FF8228 /* MoreOptionsScreen.swift */; };
+		7F6778D72EBF48A400FF8228 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778D62EBF48A400FF8228 /* AuthCoordinator.swift */; };
+		7F6778DA2EBF48F300FF8228 /* AuthenticationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778D92EBF48F300FF8228 /* AuthenticationRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		7F6778C72EBF3D5A00FF8228 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		7F6778C92EBF40C900FF8228 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		7F6778CC2EBF451800FF8228 /* LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScreen.png; sourceTree = "<group>"; };
+		7F6778D42EBF467C00FF8228 /* MoreOptionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsScreen.swift; sourceTree = "<group>"; };
+		7F6778D62EBF48A400FF8228 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		7F6778D92EBF48F300FF8228 /* AuthenticationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -112,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				7F6778CB2EBF44CB00FF8228 /* Screenshots */,
+				7F6778BD2EBF30AC00FF8228 /* Coordinator */,
 				7F6778C22EBF360700FF8228 /* Utils */,
 				7F6778C02EBF33F000FF8228 /* Screens */,
-				7F6778BD2EBF30AC00FF8228 /* Coordinator */,
 				7F48D2102EBF2E6A00718D35 /* Assets.xcassets */,
 				7F48D2122EBF2E6A00718D35 /* InterbankCloneApp.swift */,
 			);
@@ -124,7 +130,9 @@
 		7F6778BD2EBF30AC00FF8228 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				7F6778D82EBF48E900FF8228 /* Routes */,
 				7F6778BE2EBF30BB00FF8228 /* CoordinatorProtocol.swift */,
+				7F6778D62EBF48A400FF8228 /* AuthCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			children = (
 				7F6778C12EBF341800FF8228 /* Shared */,
 				7F48D2112EBF2E6A00718D35 /* LoginScreen.swift */,
+				7F6778D42EBF467C00FF8228 /* MoreOptionsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -162,6 +171,14 @@
 				7F6778CC2EBF451800FF8228 /* LoginScreen.png */,
 			);
 			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		7F6778D82EBF48E900FF8228 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				7F6778D92EBF48F300FF8228 /* AuthenticationRoute.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,10 +326,13 @@
 			files = (
 				7F48D2152EBF2E6A00718D35 /* LoginScreen.swift in Sources */,
 				7F6778C62EBF39E800FF8228 /* Header.swift in Sources */,
+				7F6778D52EBF467C00FF8228 /* MoreOptionsScreen.swift in Sources */,
+				7F6778DA2EBF48F300FF8228 /* AuthenticationRoute.swift in Sources */,
 				7F6778C42EBF361800FF8228 /* Color.swift in Sources */,
 				7F48D2162EBF2E6A00718D35 /* InterbankCloneApp.swift in Sources */,
 				7F6778BF2EBF30BB00FF8228 /* CoordinatorProtocol.swift in Sources */,
 				7F6778CA2EBF40C900FF8228 /* View.swift in Sources */,
+				7F6778D72EBF48A400FF8228 /* AuthCoordinator.swift in Sources */,
 				7F6778C82EBF3D5A00FF8228 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

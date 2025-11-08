@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct LoginScreen: View {
+  @EnvironmentObject private var coordinator: AuthCoordinator
+
   var body: some View {
     GeometryReader { geo in
       VStack(spacing: 24) {
         // MARK: - Header
-        Header()
+        Header() {
+          coordinator.push(page: .moreOptions)
+        }
         
         // MARK: - Greeting
         VStack(spacing: 8) {
@@ -95,4 +99,5 @@ struct LoginScreen: View {
 
 #Preview {
   LoginScreen()
+    .environmentObject(AuthCoordinator())
 }

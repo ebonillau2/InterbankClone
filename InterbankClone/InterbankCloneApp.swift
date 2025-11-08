@@ -12,7 +12,7 @@ struct InterbankCloneApp: App {
   
   var body: some Scene {
     WindowGroup {
-      LoginScreen()
+      AuthenticationRoute()
     }
   }
 }

@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct Header: View {
+  let buttonTapped: () -> Void
+
   var body: some View {
     HStack {
-      Image(systemName: "line.3.horizontal")
-        .font(.title2)
-        .foregroundColor(.green)
+      Button {
+        buttonTapped()
+      } label: {
+        Image(systemName: "line.3.horizontal")
+          .font(.title2)
+          .foregroundColor(.green)
+      }
       
       Spacer()
       
@@ -33,10 +39,14 @@ struct Header: View {
       
       Spacer()
     }
-    .padding(.horizontal)
+    .padding()
+    .frame(height: 60)
   }
 }
 
 #Preview {
-  Header()
+  VStack {
+    Header() {}
+    Spacer()
+  }
 }
