@@ -39,6 +39,10 @@ Creado por Enrique Bonilla
 📧 contacto: [ebonillau@gmail.com]  
 📱 Portafolio: [LinkedIn](https://www.linkedin.com/in/enrique-bonilla-untiveros-94a030122/)
 
+## 🧠 Screenshots
+
+<img src="InterbankClone/Screenshots/LoginScreen.png" width="300" alt="Login Screen">
+
 ---
 
 ## 🧩 Licencia
