@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7F48D2152EBF2E6A00718D35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48D2112EBF2E6A00718D35 /* ContentView.swift */; };
+		7F48D2162EBF2E6A00718D35 /* InterbankCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48D2122EBF2E6A00718D35 /* InterbankCloneApp.swift */; };
+		7F48D2172EBF2E6A00718D35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48D2132EBF2E6A00718D35 /* Item.swift */; };
+		7F48D2182EBF2E6A00718D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F48D2102EBF2E6A00718D35 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7F48D1F42EBF2E5900718D35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +34,13 @@
 		7F48D1E42EBF2E5700718D35 /* InterbankClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterbankClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F48D1F32EBF2E5900718D35 /* InterbankCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterbankCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F48D1FD2EBF2E5900718D35 /* InterbankCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterbankCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F48D2102EBF2E6A00718D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F48D2112EBF2E6A00718D35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F48D2122EBF2E6A00718D35 /* InterbankCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterbankCloneApp.swift; sourceTree = "<group>"; };
+		7F48D2132EBF2E6A00718D35 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7F48D1E62EBF2E5700718D35 /* InterbankClone */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InterbankClone;
-			sourceTree = "<group>";
-		};
 		7F48D1F62EBF2E5900718D35 /* InterbankCloneTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = InterbankCloneTests;
@@ -75,7 +81,7 @@
 		7F48D1DB2EBF2E5700718D35 = {
 			isa = PBXGroup;
 			children = (
-				7F48D1E62EBF2E5700718D35 /* InterbankClone */,
+				7F48D2142EBF2E6A00718D35 /* InterbankClone */,
 				7F48D1F62EBF2E5900718D35 /* InterbankCloneTests */,
 				7F48D2002EBF2E5900718D35 /* InterbankCloneUITests */,
 				7F48D1E52EBF2E5700718D35 /* Products */,
@@ -92,6 +98,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7F48D2142EBF2E6A00718D35 /* InterbankClone */ = {
+			isa = PBXGroup;
+			children = (
+				7F48D2102EBF2E6A00718D35 /* Assets.xcassets */,
+				7F48D2112EBF2E6A00718D35 /* ContentView.swift */,
+				7F48D2122EBF2E6A00718D35 /* InterbankCloneApp.swift */,
+				7F48D2132EBF2E6A00718D35 /* Item.swift */,
+			);
+			path = InterbankClone;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +123,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7F48D1E62EBF2E5700718D35 /* InterbankClone */,
 			);
 			name = InterbankClone;
 			packageProductDependencies = (
@@ -212,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F48D2182EBF2E6A00718D35 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F48D2152EBF2E6A00718D35 /* ContentView.swift in Sources */,
+				7F48D2162EBF2E6A00718D35 /* InterbankCloneApp.swift in Sources */,
+				7F48D2172EBF2E6A00718D35 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
