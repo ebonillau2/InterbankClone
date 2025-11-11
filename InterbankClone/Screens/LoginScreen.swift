@@ -88,7 +88,7 @@ struct LoginScreen: View {
         .padding(.horizontal, 24)
         .padding(.vertical, 40)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.theme.primary)
+        .background(Color.theme.primaryColor)
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .ignoresSafeArea()
       }

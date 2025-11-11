@@ -16,6 +16,9 @@ struct AuthenticationRoute: View {
         .navigationDestination(for: AuthCoordinator.Route.self) { page in
           coordinator.destination(for: page)
         }
+        .fullScreenCover(item: $coordinator.fullScreenCover) { item in
+          coordinator.buildCover(cover: item)
+        }
     }
     .environmentObject(coordinator)
   }

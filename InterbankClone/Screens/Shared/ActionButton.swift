@@ -21,7 +21,7 @@ struct ActionButton: View {
         .padding()
         .background(
           RoundedRectangle(cornerRadius: 16)
-            .fill(Color.theme.primary)
+            .fill(Color.theme.primaryColor)
             .padding(0)
           )
       

@@ -8,9 +8,10 @@
 import SwiftUI
 import Combine
 
-final class AuthCoordinator: RouterProtocol {
+final class AuthCoordinator: @MainActor RouterProtocol, @MainActor FullScreenCoverProtocol {
   @Published var path: [Route] = []
-
+  @Published var fullScreenCover: FullScreenCover?
+  
   @ViewBuilder
   func destination(for screen: Route) -> some View {
     switch screen {
@@ -20,6 +21,13 @@ final class AuthCoordinator: RouterProtocol {
       MoreOptionsScreen()
     }
   }
+  
+  @ViewBuilder
+  func buildCover(cover: FullScreenCover) -> some View {
+    switch cover {
+    case .customAlert: CustomAlert()
+    }
+  }
 }
 
 extension AuthCoordinator {
@@ -27,4 +35,12 @@ extension AuthCoordinator {
     case login
     case moreOptions
   }
+  
+  enum FullScreenCover: String, Identifiable {
+    var id: String {
+      self.rawValue
+    }
+    case customAlert
+  }
 }
+

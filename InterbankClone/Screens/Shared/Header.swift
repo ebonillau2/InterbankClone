@@ -31,7 +31,7 @@ struct Header: View {
       HStack(alignment: .lastTextBaseline, spacing: 6) {
         Text("Interclone")
           .font(.title2.bold())
-          .foregroundColor(Color.theme.primary)
+          .foregroundColor(Color.theme.primaryColor)
         Text("v21.2")
           .font(.caption2)
           .foregroundColor(.gray)

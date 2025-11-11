@@ -12,15 +12,15 @@ extension Color {
 }
 
 struct ColorTheme {
-  let primary = Color("primary")
+  let primaryColor = Color("primaryColor")
   let primaryLight = Color("primaryLight")
   let primaryDark = Color("primaryDark")
-  let accent = Color("accent")
+  let accentColor = Color("accentColor")
   let primaryText = Color("primaryText")
   let secondaryText = Color("secondaryText")
   let grayLight = Color("grayLight")
   let grayDark = Color("grayDark")
   let blueClone = Color("blueClone")
-  let white = Color("white")
-  let black = Color("black")
+  let whiteColor = Color("whiteColor")
+  let blackColor = Color("blackColor")
 }
