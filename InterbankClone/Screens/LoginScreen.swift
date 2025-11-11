@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct LoginScreen: View {
   @EnvironmentObject private var coordinator: AuthCoordinator
-
+  @State private var unlocked: Bool = false
+  @State private var biometricsAvailable: Bool = false
+  
   var body: some View {
     GeometryReader { geo in
       VStack(spacing: 24) {
@@ -17,8 +20,7 @@ struct LoginScreen: View {
         Header() {
           coordinator.push(page: .moreOptions)
         }
-        
-        // MARK: - Greeting
+
         VStack(spacing: 8) {
           HStack(alignment: .lastTextBaseline, spacing: 6) {
             Text("Hola")
@@ -35,7 +37,6 @@ struct LoginScreen: View {
         }
         .padding(.top, geo.size.height * 0.125)
         
-        // MARK: - Quick actions
         HStack(spacing: 16) {
           ActionButton(icon: "lock.fill", title: "Bloquear\ntarjeta")
             .onTapGesture {
@@ -57,22 +58,24 @@ struct LoginScreen: View {
         .padding(.horizontal)
         .padding(.top, 12)
         
-        // MARK: - Bottom login
         VStack(spacing: 24) {
-          Button {
-            // Face ID Action
-          } label: {
-            HStack {
-              Image(systemName: "faceid")
-                .font(.title2)
-              Text("Ingresar con Face ID")
+          if biometricsAvailable {
+            Button {
+              // Face ID Action
+              authenticateWithFaceID()
+            } label: {
+              HStack {
+                Image(systemName: "faceid")
+                  .font(.title2)
+                Text("Ingresar con Face ID")
+              }
+              .font(.headline)
+              .foregroundColor(.white)
+              .frame(maxWidth: .infinity)
+              .padding(11)
+              .background(Color.theme.blueClone)
+              .cornerRadius(6)
             }
-            .font(.headline)
-            .foregroundColor(.white)
-            .frame(maxWidth: .infinity)
-            .padding(11)
-            .background(Color.theme.blueClone)
-            .cornerRadius(6)
           }
           
           Button {
@@ -94,10 +97,56 @@ struct LoginScreen: View {
       }
       .background(Color.white.ignoresSafeArea())
     }
+    .onAppear {
+      biometricsAvailable = LAContext().canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+    }
   }
-}
-
-#Preview {
-  LoginScreen()
-    .environmentObject(AuthCoordinator())
-}
+  
+  func authenticateWithFaceID() {
+    let context = LAContext()
+    var error: NSError?
+    
+    if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+      context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Te permite iniciar sesion con Face ID") { success, error in
+        if success {
+          DispatchQueue.main.async {
+            coordinator.push(page: .home)
+          }
+        } else { }
+      }
+    } else {
+      // Biometrics not available
+      biometricsAvailable = false
+    }
+    
+//    context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, error in
+//      DispatchQueue.main.async {
+//        if success {
+//          self.isAuthenticated = true
+//          self.authError = nil
+//        } else {
+//          self.isAuthenticated = false
+//          self.authError = error?.localizedDescription ?? "Authentication failed"
+//          
+//          // Refresh context on failure (especially after too many attempts)
+//          if let laError = error as? LAError {
+//            switch laError.code {
+//            case .userCancel, .userFallback, .systemCancel:
+//              // User-initiated cancellation, no need to refresh
+//              break
+//            case .authenticationFailed, .passcodeNotSet, .biometryNotAvailable, .biometryNotEnrolled, .biometryLockout:
+//              // Refresh context for these errors
+//              self.refreshContext()
+//            default:
+//              break
+//            }
+//          }
+//        }
+//      }
+    }
+  }
+  
+  #Preview {
+    LoginScreen()
+      .environmentObject(AuthCoordinator())
+  }

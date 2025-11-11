@@ -24,6 +24,7 @@
 		7F6778FD2EC2F4D100FF8228 /* ViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778FC2EC2F4D100FF8228 /* ViewStates.swift */; };
 		7F6778FF2EC2FC6000FF8228 /* XButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6778FE2EC2FC6000FF8228 /* XButton.swift */; };
 		7F6779012EC305E800FF8228 /* OptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6779002EC305E800FF8228 /* OptionRow.swift */; };
+		7F6779032EC3A55000FF8228 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6779022EC3A55000FF8228 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		7F6778FC2EC2F4D100FF8228 /* ViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStates.swift; sourceTree = "<group>"; };
 		7F6778FE2EC2FC6000FF8228 /* XButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XButton.swift; sourceTree = "<group>"; };
 		7F6779002EC305E800FF8228 /* OptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionRow.swift; sourceTree = "<group>"; };
+		7F6779022EC3A55000FF8228 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -155,6 +157,7 @@
 				7F48D2112EBF2E6A00718D35 /* LoginScreen.swift */,
 				7F6778D42EBF467C00FF8228 /* MoreOptionsScreen.swift */,
 				7F6778E32EC2F2AE00FF8228 /* CustomAlert.swift */,
+				7F6779022EC3A55000FF8228 /* HomeScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				7F6778FD2EC2F4D100FF8228 /* ViewStates.swift in Sources */,
 				7F48D2162EBF2E6A00718D35 /* InterbankCloneApp.swift in Sources */,
 				7F6778BF2EBF30BB00FF8228 /* CoordinatorProtocol.swift in Sources */,
+				7F6779032EC3A55000FF8228 /* HomeScreen.swift in Sources */,
 				7F6778CA2EBF40C900FF8228 /* View.swift in Sources */,
 				7F6778D72EBF48A400FF8228 /* AuthCoordinator.swift in Sources */,
 				7F6778C82EBF3D5A00FF8228 /* ActionButton.swift in Sources */,
@@ -526,6 +530,7 @@
 				DEVELOPMENT_TEAM = U72P8JQMB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Se usa para iniciar sesion con Face ID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -559,6 +564,7 @@
 				DEVELOPMENT_TEAM = U72P8JQMB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Se usa para iniciar sesion con Face ID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -13,6 +13,7 @@ struct InterbankCloneApp: App {
   var body: some Scene {
     WindowGroup {
       AuthenticationRoute()
+        .preferredColorScheme(.light)
     }
   }
 }

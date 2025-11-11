@@ -19,13 +19,18 @@ final class AuthCoordinator: @MainActor RouterProtocol, @MainActor FullScreenCov
       LoginScreen()
     case .moreOptions:
       MoreOptionsScreen()
+    case .home:
+      HomeScreen()
     }
   }
   
   @ViewBuilder
   func buildCover(cover: FullScreenCover) -> some View {
     switch cover {
-    case .customAlert: CustomAlert()
+    case .customAlert:
+      CustomAlert()
+    case .home:
+      HomeScreen()
     }
   }
 }
@@ -34,6 +39,7 @@ extension AuthCoordinator {
   enum Route: Hashable {
     case login
     case moreOptions
+    case home
   }
   
   enum FullScreenCover: String, Identifiable {
@@ -41,6 +47,7 @@ extension AuthCoordinator {
       self.rawValue
     }
     case customAlert
+    case home
   }
 }
 
