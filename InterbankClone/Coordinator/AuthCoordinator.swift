@@ -20,7 +20,7 @@ final class AuthCoordinator: @MainActor RouterProtocol, @MainActor FullScreenCov
     case .moreOptions:
       MoreOptionsScreen()
     case .home:
-      MoreOptionsScreen()
+      HomeScreen()
     }
   }
   
