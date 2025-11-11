@@ -20,7 +20,7 @@ final class AuthCoordinator: @MainActor RouterProtocol, @MainActor FullScreenCov
     case .moreOptions:
       MoreOptionsScreen()
     case .home:
-      HomeScreen()
+      MoreOptionsScreen()
     }
   }
   
@@ -29,8 +29,6 @@ final class AuthCoordinator: @MainActor RouterProtocol, @MainActor FullScreenCov
     switch cover {
     case .customAlert:
       CustomAlert()
-    case .home:
-      HomeScreen()
     }
   }
 }
@@ -47,7 +45,6 @@ extension AuthCoordinator {
       self.rawValue
     }
     case customAlert
-    case home
   }
 }
 
