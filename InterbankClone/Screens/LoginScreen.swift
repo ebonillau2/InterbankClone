@@ -10,7 +10,6 @@ import LocalAuthentication
 
 struct LoginScreen: View {
   @EnvironmentObject private var coordinator: AuthCoordinator
-  @State private var unlocked: Bool = false
   @State private var biometricsAvailable: Bool = false
   
   var body: some View {
